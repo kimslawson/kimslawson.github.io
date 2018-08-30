@@ -224,16 +224,24 @@ hr {
   margin:0 0 20px;
 }
 
-img.repo-icon {
-    float: left;
-    width: 120px;
-    margin: -0.5em 1em 2em 0em;
+ul.repositories {
+    padding: 0;
 }
-img.repo-icon.unionizedunion {
-
+ul.repositories li {
+    list-style: none;
+    background-repeat: no-repeat;
+    padding-left: 130px;
+    min-height: 130px;
 }
-h2 {
-    clear: left;
+li[data-type="unionizedunion"] {
+    background-image: url('../unionizedunion/star.png');
+    background-size: 120px 120px;
+    background-position: 0px -10px; /* the better to align the text, my dear */
+}
+li[data-type="distractedtypist"] {
+    background-image: url('../distractedtypist/key.png');
+    background-size: 120px 120px;
+    background-position: 0px -10px; /* the better to align the text, my dear */
 }
 
 footer {
